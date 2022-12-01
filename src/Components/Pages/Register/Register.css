@@ -1,0 +1,126 @@
+.register {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 85vh;
+}
+
+
+.register .reg-card {
+  width: 60%;
+  display: flex;
+  /* align-items: center; */
+  background-color: aliceblue;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.register .reg-card .form {
+  width: 50%;
+  padding: 1rem;
+}
+.register .reg-card .form h1 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  display: inline-block;
+  padding-bottom: 0;
+}
+.register .reg-card .form h1:hover {
+  border-bottom: 2px solid rgb(71, 117, 255);
+}
+
+.form .input-group {
+  width: 100%;
+}
+.form .input-group input {
+  width: 100%;
+  margin: 0.5rem 0;
+  border: 1px solid rgb(237, 142, 158);
+}
+.form .input-group input:focus {
+  outline: none;
+  box-shadow: none;
+}
+.form small {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox,
+.checkbox:focus {
+  outline: none;
+  box-shadow: none;
+  margin-right: 0.5rem;
+}
+.btn-head {
+  display: flex;
+  justify-content: center;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  border: 2px solid white;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  background-color: green;
+}
+.btn:hover {
+  background-color: #026102;
+}
+.btn-head .btn .icon {
+  margin-right: 0.5rem;
+}
+
+.register .reg-card .reg-img {
+  width: 50%;
+  overflow: hidden;
+  position: relative;
+}
+#reg-img::before{
+  content: 'Register...';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fee5e365;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: bold;
+  z-index: 5;
+}
+
+
+.register .reg-card .reg-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1000px) {
+  .register .reg-card .form {
+    width: 60%;
+  }
+  .register .reg-card .reg-img {
+    width: 40%;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .register .reg-card {
+    flex-wrap: wrap-reverse;
+  }
+  .register .reg-card .reg-img {
+    width: 100%;
+    height: 150px;
+  }
+  .register .reg-card .form {
+    width: 100%;
+  }
+}

@@ -1,0 +1,86 @@
+.form-review input {
+  outline: none;
+  border: 2px solid #ff7c70;
+}
+
+.form-review input:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.select-rating {
+  border: 2px solid #f66d61;
+}
+.select-rating:focus {
+  outline: none;
+  box-shadow: none;
+}
+.select-rating .option {
+  border: none;
+  outline: none;
+}
+.select-rating .option:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.reviewed {
+  padding: 0.5rem;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+}
+
+.review-head {
+  position: relative;
+}
+#review-before::before{
+  content: 'To review. Please login..';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fee5e365;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: bold;
+}
+.review-head .review-img {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+.review-head .review-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.textarea {
+  width: 100%;
+  margin-top: 1rem;
+  height: 100px;
+  border : 2px solid #ff7c70;
+  resize: none;
+  outline: none;
+  
+}
+
+.textarea:focus{
+    border: none;
+    outline: none;
+  box-shadow: none;
+}
+
+@media screen and (min-width: 768px) {
+  .review-head {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 1rem;
+    align-items: center;
+  }
+}

@@ -1,0 +1,50 @@
+.error{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.error .img-body{
+    width: 50%;
+    display: flex;
+    justify-content: end;
+}
+
+.error .err-right{
+    width: 50%;
+    display: inline-block;
+}
+
+.error .err-right h1{
+    font-size: 3rem;
+    color: gray;
+    margin: 1rem 0;
+    font-weight: bold;
+}
+.error .err-right p{
+    margin-bottom: 1rem;
+}
+.err-btn{
+    background-color: aqua;
+    border-radius: 1rem;
+    padding: .5rem 1.5rem;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 700px) {
+    .error{
+        display: flex;
+        flex-direction: column;
+    }
+    .error .img-body{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .error .err-right{
+        width: 80%;
+    }
+}

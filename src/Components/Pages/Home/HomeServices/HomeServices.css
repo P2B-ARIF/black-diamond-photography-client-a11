@@ -1,0 +1,73 @@
+#loading::before{
+    content: 'Data Processing...';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #c6c5c5d2;
+    color: #000;
+    display: flex;
+    /* margin-top: 10rem; */
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+.h-services{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    column-gap: 2rem;
+}
+.h-services .service{
+    padding: 1rem;
+    background-color: aliceblue;
+    border-radius: .5rem;
+    position: relative;
+}
+
+.h-services .service .s-img{
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.h-services .service .s-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    border-radius:.5rem;
+    transition: .3s ease-in-out;
+}
+
+.h-services .service .s-img img:hover{
+    transform: scale(1.1);
+}
+
+.h-services .service h3{
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin: 1rem 0;
+}
+
+.service h4, h5{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
+@media screen and (max-width: 770px) {
+
+    .h-services{
+        grid-template-columns: repeat(2 , 1fr);
+        row-gap: 1rem;
+    }
+}
+@media screen and (max-width: 520px) {
+
+    .h-services{
+        grid-template-columns: repeat(1 , 1fr);
+    }
+}

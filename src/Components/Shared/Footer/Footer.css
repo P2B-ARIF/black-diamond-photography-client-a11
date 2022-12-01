@@ -1,0 +1,81 @@
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2rem;
+}
+
+.f-sec h1 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.f-sec p {
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.s-sec h1 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+.s-sec h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.s-sec .subscribe {
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+.s-sec .subscribe input {
+  width: 70%;
+  border: 2px solid azure;
+  padding: 0.5rem 1rem;
+}
+.s-sec .subscribe button {
+  background-color: transparent;
+  border: 2px solid azure;
+  padding: 0.5rem 1rem;
+}
+
+.t-sec {
+  margin-left: 4rem;
+}
+.t-sec h1 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.t-sec p {
+  margin: 1rem 0;
+}
+
+.t-sec div {
+  display: flex;
+}
+.t-sec div svg {
+  margin: 0 0.5rem;
+}
+.t-sec div svg:hover {
+  color: tomato;
+}
+
+
+@media screen and (max-width: 800px){
+    .footer {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 .5rem;
+      }
+      .t-sec {
+        margin-left: 0rem;
+      }
+}
+@media screen and (max-width: 500px){
+    .footer {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0 .5rem;
+      }
+}
